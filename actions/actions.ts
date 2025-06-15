@@ -27,7 +27,6 @@ export const createEmployeeAction = async (prevState: any, formData: FormData) =
     } catch (error) {
         return renderError(error)
     }
-    redirect('/apply/success') 
-    
+    redirect('/apply/success')
 }
 

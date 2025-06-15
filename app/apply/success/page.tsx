@@ -133,34 +133,6 @@ export default function ApplySuccessPage() {
           </Button>
         </div>
 
-        {/* Additional Information */}
-        <Card className="bg-blue-50 border-blue-200">
-          <CardContent className="pt-6">
-            <div className="text-center space-y-2">
-              <h4 className="font-medium text-blue-900">Stay Connected</h4>
-              <p className="text-sm text-blue-700">
-                Follow us on social media for company updates and new job opportunities.
-              </p>
-              <div className="flex justify-center gap-4 mt-4">
-                <Button variant="outline" size="sm" asChild>
-                  <Link href="#" className="text-blue-600 hover:text-blue-800">
-                    LinkedIn
-                  </Link>
-                </Button>
-                <Button variant="outline" size="sm" asChild>
-                  <Link href="#" className="text-blue-600 hover:text-blue-800">
-                    Twitter
-                  </Link>
-                </Button>
-                <Button variant="outline" size="sm" asChild>
-                  <Link href="#" className="text-blue-600 hover:text-blue-800">
-                    Glassdoor
-                  </Link>
-                </Button>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
       </div>
     </div>
   )

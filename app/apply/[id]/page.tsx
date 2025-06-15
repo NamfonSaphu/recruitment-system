@@ -42,17 +42,7 @@ export default function ApplyPage({ params }: { params: { id: string } }) {
                     </CardContent>
                 </Card>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <Card>
-                        <CardHeader>
-                            <CardTitle>Upload Your Resume</CardTitle>
-                            <CardDescription>
-                                Upload your resume and other required files.
-                            </CardDescription>
-                        </CardHeader>
-                        <MultiFileDropzoneUsage />
-                    </Card>
-
+                <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
                     <Card>
                         <CardHeader>
                             <CardTitle>Personal Information</CardTitle>
