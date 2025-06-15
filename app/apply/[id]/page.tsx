@@ -1,6 +1,6 @@
 import { CreateEmployee } from "@/components/employee";
+import NavbarPage from "@/components/nabar/navbar";
 import { Card, CardDescription, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { MultiFileDropzoneUsage } from "@/components/upload-file";
 import { positions } from "@/utils/position";
 
 export default function ApplyPage({ params }: { params: { id: string } }) {
@@ -15,7 +15,8 @@ export default function ApplyPage({ params }: { params: { id: string } }) {
     }
 
     return (
-        <div className="container mx-auto py-8 px-4 md:px-8 space-y-8">
+        <div className="container mx-auto py-8 px-4 md:px-8 space-y-1">
+            <NavbarPage />
             <div className="container py-10 space-y-8">
                 <div>
                     <h1 className="text-3xl font-bold mb-2">Apply for: {position.title}</h1>

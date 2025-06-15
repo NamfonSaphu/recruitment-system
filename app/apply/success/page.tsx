@@ -1,3 +1,4 @@
+import NavbarPage from "@/components/nabar/navbar"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { CheckCircle, Clock, Mail, Phone, ArrowLeft, Home } from "lucide-react"
@@ -7,6 +8,8 @@ export default function ApplySuccessPage() {
   return (
     <div className="min-h-screen bg-background flex items-center justify-center p-4">
       <div className="w-full max-w-2xl space-y-8">
+      <NavbarPage />
+
         {/* Success Message */}
         <Card className="text-center">
           <CardHeader className="pb-4">

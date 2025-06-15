@@ -10,8 +10,11 @@ export const employeeSchema = z.object({
     .url()
     .optional()
     .or(z.literal('').transform(() => undefined)),
+  fileUrl: z
+    .string()
+    .optional()
+    .or(z.literal('').transform(() => undefined)),
 })
-
 
 export const validateWithZod = <T>(schema: ZodSchema<T>, data: unknown): T => {
     const result = schema.safeParse(data)

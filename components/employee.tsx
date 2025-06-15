@@ -24,7 +24,7 @@ export const CreateEmployee = () => {
           <MultiFileDropzoneUsage />
         </Card>
         <div className="mt-6">
-          <SubmitButton text="Submit" />
+          <SubmitButton text="Submit"/>
         </div>
       </FormContainer>
     </section>

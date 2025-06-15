@@ -1,4 +1,4 @@
-export const positions = [
+export const positions =  [
   {
     id: 1,
     title: "Senior Frontend Developer",
