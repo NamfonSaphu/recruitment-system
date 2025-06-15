@@ -8,7 +8,7 @@ export default function ApplySuccessPage() {
   return (
     <div className="min-h-screen bg-background flex items-center justify-center p-4">
       <div className="w-full max-w-2xl space-y-8">
-      <NavbarPage />
+        <NavbarPage />
 
         {/* Success Message */}
         <Card className="text-center">
@@ -18,7 +18,7 @@ export default function ApplySuccessPage() {
             </div>
             <CardTitle className="text-2xl text-green-700">Application Submitted Successfully!</CardTitle>
             <CardDescription className="text-lg">
-              Thank you for your interest in joining our team. We've received your application and will review it
+              Thank you for your interest in joining our team. We&apos;ve received your application and will review it
               carefully.
             </CardDescription>
           </CardHeader>
@@ -34,7 +34,6 @@ export default function ApplySuccessPage() {
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="grid gap-4">
-            
               <div className="flex gap-3">
                 <div className="flex-shrink-0 w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
                   <span className="text-sm font-medium text-primary">1</span>
@@ -54,7 +53,7 @@ export default function ApplySuccessPage() {
                 <div>
                   <h4 className="font-medium">Next Steps</h4>
                   <p className="text-sm text-muted-foreground">
-                    If your profile matches our requirements, we'll reach out to schedule an initial conversation.
+                    If your profile matches our requirements, we&apos;ll reach out to schedule an initial conversation.
                   </p>
                 </div>
               </div>
@@ -97,7 +96,7 @@ export default function ApplySuccessPage() {
           <CardHeader>
             <CardTitle>Questions About Your Application?</CardTitle>
             <CardDescription>
-              If you have any questions or need to update your application, don't hesitate to reach out.
+              If you have any questions or need to update your application, don&apos;t hesitate to reach out.
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
@@ -135,7 +134,6 @@ export default function ApplySuccessPage() {
             </Link>
           </Button>
         </div>
-
       </div>
     </div>
   )

@@ -1,10 +1,25 @@
+
+'use client'
+
 import { CreateEmployee } from "@/components/employee";
 import NavbarPage from "@/components/nabar/navbar";
 import { Card, CardDescription, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { positions } from "@/utils/position";
+import { useParams } from 'next/navigation';
 
-export default function ApplyPage({ params }: { params: { id: string } }) {
-    const position = positions.find((pos) => String(pos.id) === params.id);
+export default function ApplyPage() {
+  const params = useParams();
+  const id = Number(params.id); 
+
+  const position = positions.find((pos) => pos.id === id);
+
+  if (!position) {
+    return (
+      <div className="container py-10">
+        <h1 className="text-2xl font-bold text-red-600">Position not found</h1>
+      </div>
+    );
+  }
 
     if (!position) {
         return (
