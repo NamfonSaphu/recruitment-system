@@ -1,6 +1,7 @@
 'use server'
 import { employeeSchema, validateWithZod } from "@/utils/schema"
 import { prisma } from '@/utils/db'
+import { redirect } from "next/navigation"
 import { currentUser } from '@clerk/nextjs/server'
 
 const renderError = (error: unknown): { message: string } => {
@@ -42,10 +43,10 @@ export const createEmployeeAction = async (prevState: any, formData: FormData) =
             },
         });
 
-        return { message: 'Apply Success!!!' }
     } catch (error) {
         return renderError(error);
     }
+    redirect('/apply/success');
 };
 
 
