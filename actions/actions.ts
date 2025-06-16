@@ -10,34 +10,42 @@ const renderError = (error: unknown): { message: string } => {
     }
 }
 
-
 // getUser from Clerk
-export const getAuthUser = async() => {
-  const user = await currentUser()
-  console.log(user)
-}
-
+export const getAuthUser = async () => {
+    const user = await currentUser();
+    console.log(user);
+    return user;
+};
 export const createEmployeeAction = async (prevState: any, formData: FormData) => {
     try {
-        // getAuthUser()
-        const rawData = Object.fromEntries(formData)
-        const validateField = validateWithZod(employeeSchema, rawData)
-        console.log(validateField)
-        const file = formData.get('fileUrl') as string
-        console.log(file)
+        const user = await getAuthUser();
+        const fileUrl = formData.get("fileUrl") as string;
+        if (!user) throw new Error("User not authenticated");
+
+        const rawData = Object.fromEntries(formData);
+        const validateField = validateWithZod(employeeSchema, rawData);
+        console.log(validateField);
+        console.log(fileUrl)
+
+        const file = formData.get('fileUrl') as string;
+        console.log(file);
 
         await prisma.employee.create({
             data: {
+                clerkId: user.id,
                 position: validateField.position,
                 fullname: validateField.fullname,
                 email: validateField.email,
                 salary: validateField.salary,
                 url: validateField.url,
+                fileUrl: validateField.fileUrl,
             },
-        })
+        });
     } catch (error) {
-        return renderError(error)
+        return renderError(error);
     }
-    redirect('/apply/success')
-}
+
+    redirect('/apply/success');
+};
+
 
