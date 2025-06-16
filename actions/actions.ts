@@ -1,7 +1,6 @@
 'use server'
 import { employeeSchema, validateWithZod } from "@/utils/schema"
 import { prisma } from '@/utils/db'
-import { redirect } from "next/navigation"
 import { currentUser } from '@clerk/nextjs/server'
 
 const renderError = (error: unknown): { message: string } => {
@@ -16,6 +15,7 @@ export const getAuthUser = async () => {
     console.log(user);
     return user;
 };
+
 export const createEmployeeAction = async (prevState: any, formData: FormData) => {
     try {
         const user = await getAuthUser();
@@ -41,11 +41,11 @@ export const createEmployeeAction = async (prevState: any, formData: FormData) =
                 fileUrl: validateField.fileUrl,
             },
         });
+
+        return { message: 'Apply Success!!!' }
     } catch (error) {
         return renderError(error);
     }
-
-    redirect('/apply/success');
 };
 
 

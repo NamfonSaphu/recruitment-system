@@ -1,4 +1,3 @@
-
 'use client'
 
 import { CreateEmployee } from "@/components/employee";
