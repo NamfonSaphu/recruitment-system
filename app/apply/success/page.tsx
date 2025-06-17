@@ -108,7 +108,7 @@ export default function ApplySuccessPage() {
                 <Phone className="h-5 w-5 text-muted-foreground" />
                 <div>
                   <div className="font-medium">Phone</div>
-                  <div className="text-sm text-muted-foreground">(555) 123-4567</div>
+                  <div className="text-sm text-muted-foreground">(+66) 12-345-6789</div>
                 </div>
               </div>
             </div>
