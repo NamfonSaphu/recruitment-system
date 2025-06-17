@@ -9,7 +9,6 @@ export default function PositionsPage() {
     return (
         <div className="min-h-screen bg-background">
             <div className="container mx-auto px-4 py-8">
-                {/* Header */}
                 <div className="text-center mb-12">
                     <h1 className="text-4xl font-bold tracking-tight mb-4">Open Positions</h1>
                     <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -18,7 +17,6 @@ export default function PositionsPage() {
                     </p>
                 </div>
 
-                {/* Job Listings */}
                 <div className="grid gap-6">
                     {positions.map((position) => (
                         <Card key={position.id} className="hover:shadow-lg transition-shadow">
@@ -35,7 +33,6 @@ export default function PositionsPage() {
                             </CardHeader>
 
                             <CardContent className="space-y-4">
-                                {/* Job Details */}
                                 <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
                                     <div className="flex items-center gap-1">
                                         <MapPin className="h-4 w-4" />
@@ -51,7 +48,6 @@ export default function PositionsPage() {
                                     </div>
                                 </div>
 
-                                {/* Requirements */}
                                 <div>
                                     <h4 className="font-medium mb-2">Requirements:</h4>
                                     <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">

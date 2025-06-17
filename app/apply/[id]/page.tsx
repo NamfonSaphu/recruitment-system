@@ -20,14 +20,6 @@ export default function ApplyPage() {
     );
   }
 
-    if (!position) {
-        return (
-            <div className="container py-10">
-                <h1 className="text-2xl font-bold text-red-600">Position not found</h1>
-            </div>
-        );
-    }
-
     return (
         <div className="container mx-auto py-8 px-4 md:px-8 space-y-1">
             <NavbarPage />

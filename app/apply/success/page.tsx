@@ -10,7 +10,6 @@ export default function ApplySuccessPage() {
       <div className="w-full max-w-2xl space-y-8">
         <NavbarPage />
 
-        {/* Success Message */}
         <Card className="text-center">
           <CardHeader className="pb-4">
             <div className="mx-auto mb-4">
@@ -24,7 +23,6 @@ export default function ApplySuccessPage() {
           </CardHeader>
         </Card>
 
-        {/* Application Details */}
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
@@ -61,7 +59,6 @@ export default function ApplySuccessPage() {
           </CardContent>
         </Card>
 
-        {/* Timeline */}
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
@@ -91,7 +88,6 @@ export default function ApplySuccessPage() {
           </CardContent>
         </Card>
 
-        {/* Contact Information */}
         <Card>
           <CardHeader>
             <CardTitle>Questions About Your Application?</CardTitle>
@@ -119,7 +115,6 @@ export default function ApplySuccessPage() {
           </CardContent>
         </Card>
 
-        {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button asChild variant="outline" className="flex items-center gap-2">
             <Link href="/">
