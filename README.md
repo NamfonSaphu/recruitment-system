@@ -1,36 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Career Application Platform
 
-## Getting Started
+📄 โปรเจกต์: ระบบรับสมัครงานออนไลน์
+- ระบบรับสมัครงานออนไลน์ที่ทันสมัยและใช้งานง่าย ให้ผู้ใช้งานสามารถลงทะเบียนและเข้าสู่ระบบได้อย่างปลอดภัยผ่าน Clerk พร้อมทั้งกรอกแบบฟอร์มสมัครงานเพื่อส่งข้อมูลใบสมัครงาน โดยข้อมูลทั้งหมดจะถูกจัดเก็บอย่างปลอดภัยในฐานข้อมูล Supabase
 
-First, run the development server:
+---
+🚀 ฟีเจอร์หลัก :
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 🔐 ระบบล็อกอินและลงทะเบียน ผู้ใช้สามารถสมัครสมาชิกและเข้าสู่ระบบด้วยระบบยืนยันตัวตนจาก Clerk  
+- 📝 ฟอร์มสมัครงาน ผู้สมัครสามารถกรอกและส่งแบบฟอร์มใบสมัครงานได้อย่างสะดวก
+- 💾 จัดเก็บข้อมูลใน Supabase ข้อมูลใบสมัครทั้งหมดจะถูกบันทึกลงในฐานข้อมูล Supabase เพื่อให้สามารถบริหารจัดการและเรียกดูข้อมูลได้ง่าย
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Next.js – Frontend Framework
+- Clerk – Authentication & user management
+- Supabase – Database & backend services
+- Prisma – Type-safe ORM for interacting with Supabase
+- Edge Store API – File upload & storage (e.g. resumes, cover letters)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

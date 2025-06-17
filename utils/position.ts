@@ -85,7 +85,7 @@ export const positions =  [
     department: "Customer Success",
     location: "Thailand, Bangkok",
     type: "Full-time",
-    salary: "20 - 25k",
+    salary: "20k - 25k",
     description:
       "Help our customers succeed with our platform. You'll onboard new users, provide support, and gather feedback to improve our product.",
     requirements: [
